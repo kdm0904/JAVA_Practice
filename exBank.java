@@ -43,15 +43,20 @@ public class exBank {
 			} else if(keyCode==50) {
 				System.out.println("출금액 : ");
 				withdraw = sc.nextInt();
-				account -= withdraw;
-				
+				if (account > withdraw) {
+					account -= withdraw;
+					System.out.println("출금 완료");
+				} else if (account < withdraw) {
+					account = account;
+					System.out.println("출금 불가, 현재 잔액 : " + account);
+				}
 				
 			} else if(keyCode==51) {
 				System.out.println("잔액 : "+ account);
 			
 			} else if(keyCode==52) {
 				run=false;
-			}
+			} 
 		}
 		
 		System.out.println("프로그램 종료");

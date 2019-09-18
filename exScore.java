@@ -19,9 +19,10 @@ public class exScore {
 		int tot=0, avg=0;
 		char grade = 'A';
 		int keyCode = 0;
-		int cnt = 1;
+		int cnt = 0;
 		
 		while(run) {
+			
 			
 			System.out.println("----------------");
 			if(keyCode != 13 && keyCode != 10) {
@@ -29,7 +30,6 @@ public class exScore {
 				System.out.println("1.성적 입력(국어/영어/수학) | 2.총점/평균 | 3.학점출력(A-F까지) | 4.종료");
 				System.out.println("----------------");
 				System.out.println("선택 : ");
-				cnt++;	
 			}
 			
 			keyCode=System.in.read();
@@ -63,7 +63,8 @@ public class exScore {
 				} else {
 					grade='F';
 				} System.out.println(grade);
-
+				cnt++;
+				System.out.println(cnt+"번 학생 성적처리 완료");
 			} else if (keyCode==52) {
 				run=false;
 			}
