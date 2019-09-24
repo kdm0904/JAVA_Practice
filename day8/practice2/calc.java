@@ -5,7 +5,6 @@ public class calc {
 	
 	point score = new point();
 	
-	
 	public int tot() {
 		int tot = score.getKor()+score.getEng()+score.getMath();
 		return tot;

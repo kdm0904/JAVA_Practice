@@ -16,6 +16,8 @@ public class output {
 		char grade = 'a';
 		int i = 1;
 		
+		
+		
 		while(run) {
 			while (i<=3) {
 				if (num < 5) {
@@ -50,6 +52,8 @@ public class output {
 				}
 				
 				else if (num == 2) {
+					tA.tot();
+					tA.avg();
 					System.out.println(i+"锅 切积狼 己利贸府");
 					System.out.println("");
 					System.out.println("醚痢 : " + tA.tot());
