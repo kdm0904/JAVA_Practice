@@ -1,0 +1,15 @@
+@charset "UTF-8";
+body,html {min-height: 100%; position: relative; background-color: #797979;}
+.line { 
+	border-bottom : 1px solid #444444;
+    padding: 10px;
+	}
+.data {
+	border: 1px solid #444444;
+	border-collapse: collapse;
+}	
+.video {
+	width : 200px;
+	height : 200px;
+}
+

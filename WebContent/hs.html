@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>한솥 클론 코딩</title>
+    <style>
+    /*아이디 : # ,  클래스명 : .*/
+    .headdiv {
+        width: 400px; height: 50px;
+    }
+    #rolling {
+        width: 600px; height: 300px; background-image: url(img/food.jpg);
+    }
+    #oppact {
+        width: 420px; height: 400px; background-color: black; opacity: 0.3;
+    }
+    #imgg {
+        width: 100%;
+    }
+    #imgg2 {
+        width: 100%;
+    }
+    #aaa tr td{
+        width: 50%;
+    }
+    #yellowdiv{
+        width: 1920px; height: 220px; background-color: yellow; padding: 10px;
+    }
+    </style>
+</head>
+<body>
+	 <!--머리 부분을 div 태그로 감싼 후 메인 이미지는 a태그로 감싼다-->
+    <div id="headdiv" class="headdiv">
+        <a href="#">이미지</a>
+    </div>
+    <!--중간 롤링 이미지는 background image로 처리-->
+    <div id="rolling" class="roll">
+    </div>
+    <!--롤링 바로 아랫 부분은 테이블로 처리-->
+    <table width="100%" id="aaa">
+        <!---이부분은 이미지가 들어갈 행-->
+        <tr>
+            <!---이부분은 이미지가 들어갈 열-->
+            <td align="center">
+                <img id="imgg" src="C:/Users/Administrator/Downloads/이미지/meat.jpg" alt="이미지1" >
+            </td>
+            <td align="center">
+                <img id="imgg2" src="C:/Users/Administrator/Downloads/이미지/salmon.jpg" alt="이미지2">
+            </td>
+        </tr>
+        <!---이부분은 안내 메세지가 들어갈 행-->
+        <tr>
+            <!---이부분은 안내 메시지가 들어갈 열-->
+            <td align="center">
+                가격이상의 ..
+            </td>
+            <td align="center">
+                한끼 식사 .. 
+            </td>
+        </tr>
+    </table>
+
+    <div id="yellowdiv">
+        <h1>가맹점주에게도</h1>
+        <h1>든든한 한솥입니다</h1>
+        <span style="display: block;">점주님들의 꿈을 실현시켜 드리기 위해</span>
+        <span style="display: block;">가맹점주와 성공까지 동행</span>
+        <span style="display: block;">상담 부터 개업까지</span>
+    </div>
+
+    <div style="width: 500px; height: 500px; background-image: url(./img/a1.jpg); padding: 20px;">
+        <div id="oppact">
+        </div>
+    </div>
+
+</body>
+</html>

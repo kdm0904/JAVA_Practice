@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+	
+	#header {
+		width: 800px; margin: 0 auto; background: red;
+	}
+	
+	#wrap {
+		width: 800px; margin: 0 auto; overflow:hidden; 	
+	}
+	
+	#aside {
+		width:200px; float:left; background:blue;
+	}
+	
+	#content {
+		width:600px; float:left; background:green;
+	}
+	
+	#footer {
+		width:800px; margin: 0 auto; background:red
+	}
+	
+	.select {
+	color : red}
+	img[src^=it01] { border : 3px solid red; margin: 0 auto; }
+	img[src$=png] { border : 3px solid green; margin: 0 auto; }
+	img[src*=gi] { border : 3px solid blue; margin: 0 auto;}
+	img[src~=03] { border : 3px solid blue; margin: 0 auto;}
+	p[name*=my] { border : 3px solid red; margin: 0 auto;}
+</style>
+</head>
+<body>
+	<div id = "header">
+		<h1>Header</h1>
+	</div>
+	<div id = "wrap">
+		<div id = "aside">
+			<h1>Aside</h1>
+		</div>
+		<div id = "content">
+			<h1>Content</h1>
+			<ul>
+				<li class="select">Lorem ipsum</li>
+				<li>Lorem ipsum</li>
+			</ul>
+		</div>
+	</div>
+	<img src="it01.jpg" width="200" height="250" />
+	<img src="it02.png" width="200" height="250" />
+	<img src="it03.gif" width="200" height="250" />
+	<p name="myflower"> 무궁화 꽃이 피었습니다 </p>
+	<div id = "footer">
+		<h1>footer</h1>
+	</div>
+</body>
+</html>

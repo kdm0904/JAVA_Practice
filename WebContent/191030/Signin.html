@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>회원가입</title>
+</head>
+<body>
+	<form method="post" action="#">
+		아이디 : <input type="text" name="id" /> <input type="checkbox" name="chk_info" value="중복확인">중복확인<br>
+		비밀번호 : <input type="password" name="password" /><br>
+		비밀번호 확인 : <input type="password" name="password" /><br>
+		핸드폰 번호 : <select type ="tel" name="tel"><option value="010">010</option>
+				  <option value="011">011</option>
+				  <option value="016">016</option>
+				  <option value="019">019</option>			  
+				  </select>
+		
+		<input type="tel" name="tel2"><input type="tel" name="tel3"><br>
+		이메일 주소 : <input type="email" name="email"><br>
+		<p>직업</p>
+		<select name="job">
+    		<option value="">직업선택</option>
+    		<option value="학생">학생</option>
+    		<option value="회사원">회사원</option>
+    		<option value="기타">기타</option>
+		</select><br>
+		<p>희망 과목</p>
+		<input type="radio" name="chk_info2" value="HTML">HTML
+		<input type="radio" name="chk_info2" value="CSS">CSS
+		<input type="radio" name="chk_info2" value="웹디자인">웹디자인<br>
+		
+    	<input type="submit" value="전송"><input type="reset" value="초기화">
+		
+	</form>	
+</body>
+</html>
