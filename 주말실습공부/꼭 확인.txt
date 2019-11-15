@@ -1,0 +1,2 @@
+이 작업은 윈도우 톰캣에서 시행해야함
+C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\ROOT
